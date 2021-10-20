@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.col-12 {
+    position: relative;
+}
+
+
+.dropdown {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    z-index: 1;
+}
+
+.dropdown:hover {
+    opacity: 95%;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    width: 100%;
+}
+
+#carouselExampleCaptions{
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 20px;
+}
+
+.recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.recherche {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recherche .form-control {
+    width: 200px;
+}
+
+.recherche .button-control {
+    width: 200px;
+}
+
+/*BODY*/
+
+.top-row{
+    position: relative;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.car-infos{
+    display: block;
+}
+
+
+.voiture{
+    border-bottom: 1px solid rgb(221, 220, 220);
+    margin-bottom: 50px;
+}
+
+button{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+
+
+/*FOOTER*/
+
+
+
+.img-agence{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-agence img {
+    width: 40%;
+}
+
+
+.infos-agence{
+    display: block;
+}
+   
+
+
+
+/*RESPONSIVE*/
+
+
+/*J'ai eu du mal à adapter la taille du moteur de recherche
+
+/*X-Small devices (téléphones < 576px)*/
+@media (max-width: 575.98px) { 
+
+    .recherche{
+       width: 50px;
+       display: block;
+    }
+ }
+
+
+
+/* Medium devices (tablets < 992px)*/
+@media (max-width: 991.98px) { 
+    .recherche{
+        width: 90px;
+    }
+ }
