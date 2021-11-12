@@ -1,87 +1,99 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /*HEADER*/
 
-.col-12 {
+.banner {
     position: relative;
+
 }
 
 
-.dropdown {
+#navside {
     position: absolute;
     right: 50px;
     top: 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdown:hover {
     opacity: 95%;
 }
 
-.dropdown .dropdown-menu .dropdown-item {
-    width: 100%;
+
+
+.recherche {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
-#carouselExampleCaptions{
+
+#carouselbanner .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
     overflow: hidden;
-}
+  }
+  
+  #carouselbanner .carousel-item:before {
+    content: "";
+    background-image: linear-gradient(to bottom,
+        transparent, rgba(0, 0, 0, 0.5));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+
 
 .carousel-caption {
     position: absolute;
     top: 20px;
 }
 
-.recherche {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+
+
+.form-floating .form-select {
+    width: 210px;
+    height: 37.6px;
+    margin-right: 5px;
 }
 
-.recherche {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.recherche .form-control {
-    width: 200px;
-}
-
-.recherche .button-control {
-    width: 200px;
-}
 
 /*BODY*/
 
-.top-row{
+.top-row {
     position: relative;
 }
 
 
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
     filter: invert(100%);
 }
 
-.car-infos{
+.car-infos {
     display: block;
 }
 
 
-.voiture{
+.voiture {
     border-bottom: 1px solid rgb(221, 220, 220);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
-button{
-    color: white;
-    background-color: green;
-    border-radius: 5px;
-}
 
 
 
@@ -89,7 +101,7 @@ button{
 
 
 
-.img-agence{
+.img-agence {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,32 +113,45 @@ button{
 }
 
 
-.infos-agence{
+.infos-agence {
     display: block;
 }
-   
+
 
 
 
 /*RESPONSIVE*/
 
 
-/*J'ai eu du mal à adapter la taille du moteur de recherche
+
 
 /*X-Small devices (téléphones < 576px)*/
-@media (max-width: 575.98px) { 
-
-    .recherche{
-       width: 50px;
-       display: block;
+@media (max-width: 575.98px) {
+    .car-info {
+        text-align: center;
     }
- }
+
+    .infos-agence {
+        text-align: center;
+    }
+
+    .recherche .container-inputs {
+        flex-direction: column;
+    }
+
+    
+
+
+}
 
 
 
 /* Medium devices (tablets < 992px)*/
-@media (max-width: 991.98px) { 
-    .recherche{
-        width: 90px;
-    }
- }
+@media (max-width: 991.98px) {
+
+   
+
+
+
+
+}
