@@ -1,4 +1,3 @@
-# testjavascript
-Test Javascript
+# Javascript project
 
 https://albertobermejo93.github.io/testjavascript/
